@@ -1,14 +1,13 @@
 <section id="course_manage_page" class="container">
+	<section class="container row" style="width: auto; height: 34px; flex-direction: row-reverse; background-color: #eeeeed; margin-inline-start: -15px; margin-inline-end: -45px;">
+		<button onclick="location.href = '../login';" style="margin-inline-start: 2px; margin-block-start: 1px; margin-block-end: 1px;"><h6>Log Out</h6></button>
+		<button onclick="location.href = '../course';" style="margin-inline-start: 2px; margin-block-start: 1px; margin-block-end: 1px;"><h6>Go Back</h6></button>
+		<button onclick="location.href = '../help';" style="margin-block-start: 1px; margin-block-end: 1px; margin-inline-start: 2px;"><h6>Help</h6></button>
+		</section>
 	<h2>CS498 Course Portfolio</h2>
 	<div class="container row">
 		Course Summary
 	</div>
-	<form>
-		<input type="button" value="Go Back" onclick="history.back()">
-	</form>
-	<form>
-		<input type="button" value="Logout" onclick="location.href = '../login';">
-	</form>
 	<div class="container row">
 		{{#student_learning_outcomes}}
 		<h3>Student Learning Outcome {{index}}</h3>
