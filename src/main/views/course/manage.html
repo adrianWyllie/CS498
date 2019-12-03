@@ -4,19 +4,20 @@
 		<button onclick="location.href = '../course';" style="margin-inline-start: 2px; margin-block-start: 1px; margin-block-end: 1px;"><h6>Go Back</h6></button>
 		<button onclick="location.href = '../help';" style="margin-block-start: 1px; margin-block-end: 1px; margin-inline-start: 2px;"><h6>Help</h6></button>
 		</section>
-	<h2>CS498 Course Portfolio</h2>
+	<h2>Course Portfolio</h2>
 	<div class="container row">
-		Course Summary
+		<h4 style="margin-inline-end: 15px;">CS498</h4>
+		<p>Course Summary</p>
 	</div>
 	<div class="container row">
 		{{#student_learning_outcomes}}
-		<h3>Student Learning Outcome {{index}}</h3>
-		<p>{{description}}</p>
-		<table id="student_learning_outcome_rubric">
-			<tr>
-				<th>Assessment Score</th>
+		<h5 style="padding-inline-end: 5px;">Student Learning Outcome {{index}}</h5>
+		<p style="padding-inline-end: 15px;">{{description}}</p>
+		<table id="student_learning_outcome_rubric" style="border: 1px solid #c8c8c7">
+			<tr style="background-color: #eeeeed; border-block-end: 1px solid black;">
+				<th style="padding-inline-start: 4px; padding-inline-end: 4px;">Assessment Score</th>
 				{{#metrics}}
-				<th>{{name}}</th>
+				<th style="padding-inline-start: 4px; padding-inline-end: 4px;">{{name}}</th>
 				{{/metrics}}
 			</tr>
 			<tr>
@@ -44,12 +45,14 @@
 				{{/metrics}}
 			</tr>
 		</table>
+	</div>
+	<div class="container row" style="margin-block-start: 15px;">
 		{{#artifacts}}
 		<div class="container row">
-			<h3>Artifact 1: {{name}}</h3>
+			<h5>Artifact 1: {{name}}</h5>
 			<form id="edit_course_form" target="_self" method="POST">
-				<table>
-					<tr>
+				<table style="border: 1px solid #c8c8c7; margin-block-end: 10px;">
+					<tr style="border-block-end: 1px solid black; background-color: #eeeeed;">
 						<th>Student Index</th>
 						{{#metrics}}
 						<th>{{name}}</th>
