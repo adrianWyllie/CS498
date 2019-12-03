@@ -1,14 +1,10 @@
-<section id="course_index_page" class="container" style="background:#ffffff; height: 80vh; margin-block-start: 10px">
-	<section class="new_courses">
-		<a href="/course/new">
-			new course <i class="material-icons">add_circle</i>
-		</a>
-	</section>
-	<section>
-		<a href="help">Help page</a>
-	</section>
-	<section>
-		<a href="/login">Log out</a>
+<section id="course_index_page" class="container" style="background:#ffffff; height: 80vh; margin-block-start: 0px">
+	<section class="container row" style="width: auto; height: 34px; flex-direction: row-reverse; background-color:#eeeeed; margin-inline-start: -15px; margin-inline-end: -45px;">
+		<button onclick="location.href='/login';" style="margin-inline-start: 2px; margin-block-start: 1px; margin-block-end: 1px;"><h6>Log Out</h6></button>
+		<button onclick="location.href='/help';" style="margin-inline-start: 2px; margin-block-start: 1px; margin-block-end: 1px;"><h6>Help Page</h6></button>
+		<button onclick="location.href='/course/new';" style="margin-inline-start: 2px; margin-block-start: 1px; margin-block-end: 1px;">
+			<h6>new course <i class="material-icons">add_circle</i></h6>
+		</button>
 	</section>
 	<section class="active_courses">
 		<h3>Active Courses<span data-toggle="tooltip" title="You can edit artifact data for these courses until the deadline"><i class="material-icons">help</i></span></h3>

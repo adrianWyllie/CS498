@@ -37,7 +37,7 @@ app.use(express.static(path.join(project_root, 'public')));
 
 app.use('/', require('./routes/index'))
 app.use('/login', require('./routes/login'));
-app.use('/login2', require'./routes/login2'));
+app.use('/login2', require('./routes/login2'));
 app.use('/course', require('./routes/course'));
 app.use('/help', require('./routes/help'));
 
